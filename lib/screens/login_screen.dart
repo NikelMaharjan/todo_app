@@ -171,7 +171,7 @@ class LoginScreen extends StatelessWidget {
           SnackBar(content: Text("Login failed")),
         );
       } else {
-        Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+        Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) {
           return TodoScreen();
         }));
       }
